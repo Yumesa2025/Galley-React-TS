@@ -48,7 +48,7 @@ export function PokemonGallery(){
     <div className={cardsContainerStyle}>
       {myCards} 
       <div ref={sentinelRef} style={{ height: "20px", width: "100%" }} /> {/* 투명 감지선 */}
-      {isFetchingNextPage && <div>다음 불러오는 중 ⏳</div>}
+      {isFetchingNextPage && <div>다음 불러오는 중 </div>}
     </div>
     );
 }
