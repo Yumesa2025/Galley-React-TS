@@ -6,12 +6,13 @@ import { useIntersectionObserver } from "../../utils/useIntersectionObserver";
 
 
 const cardsContainerStyle = css({
-  display: "flex",
-  flexWrap: "wrap",       
-  justifyContent: "center",
-  gap: "20px",  
+  display: "grid",
+  gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))",
+  gap: "20px",
+  padding: "20px",
   width: "100%",
   maxWidth: "1200px",
+  margin: "0 auto",
 });
 
 const favoritesWrapStyle = css({
